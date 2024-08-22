@@ -1,0 +1,199 @@
+/*----GLOBAL SETTINGS----*/
+
+/*--Variables--*/
+:root {
+    --xl: 1280px;
+    --section-primary: rgb(9, 18, 57);
+    --section-secondary: rgb(15, 119, 174);
+    --text-colour: rgb(220, 220, 220);
+}
+
+/*--Fonts--*/
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: var(--text-colour);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; 
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; 
+}
+
+
+/*--Reset Styles--*/
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/*--Background Settings--*/
+.bg-primary {
+  background-color: var(--section-primary);
+  color: var(--text-color-primary)
+}
+
+.bg-secondary {
+  background-color: var(--section-secondary);
+  color: var(--section-primary);
+}
+
+/*----NAVIGATION BAR SETTINGS----*/
+
+/*--Nav tag settings--*/
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 2rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 60px;
+    opacity: 0.9;
+    overflow-y: hidden;
+    z-index: 5;
+}
+
+/*--Nav Logo Settings--*/
+#nav-logo {
+    padding-left: 200px;
+}
+
+
+/*--Nav Buttons List Settings--*/
+#nav-buttons-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+    padding-right: 100px;
+}
+
+/*--Individual Nav Button Settings--*/
+.nav-button {
+    padding: 0.6rem;
+    font-size: 16px;
+    border: 2px solid var(--section-secondary);
+    border-radius: 40px;
+    text-align: center;
+    width: 200px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+/*--Remove Hyperlink Unlerline--*/
+.nav-button:link {
+    text-decoration: none;  
+}
+
+/*--Change Button with Mouse Hover--*/
+.nav-button:hover {
+    background-color: var(--section-secondary);
+    color: white;
+}
+
+/*----FOOTER SETTINGS----*/
+
+/*--Footer Links div Settings--*/
+#footer-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 145px;
+    position: relative;
+    overflow: hidden
+}
+
+#footer-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 225px;
+    position: absolute;
+    left: 20%;
+    transform: translateX(-200px);
+}
+
+.footer-button {
+    text-align: center;
+    font-size: 22px;
+    text-decoration: none;
+    border: 2px solid var(--section-primary);
+    border-radius: 40px;
+    padding: 0.6rem;
+    width: 125px;
+    display: inline-block;
+}
+
+.footer-button:hover {
+    background-color: var(--section-primary);
+    color: white;
+}
+
+#footer-logo{
+    width: 150px;
+    height: 150px;
+}
+
+#footer-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 150px;
+    position: absolute;
+    left: 20%;
+    transform: translateX(900px);
+}
+
+
+/*----GENERAL CLASS SETTINGS----*/
+
+
+/*----GENERAL ID SETTINGS----*/
+
+
+/*----INDEX PAGE SETTINGS----*/
+
+
+/*----PROFESSIONAL PROJECTS PAGE SETTINGS----*/
+
+
+/*----PERSONAL PROJECTS PAGE SETTINGS----*/
+
+
+/*----SKILLS & REFERENCES PAGE SETTINGS----*/
+
+
+/*----CONTACT & SHOP PAGE SETTINGS----*/
