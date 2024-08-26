@@ -579,7 +579,22 @@ footer img {
 
 
 /*----CONTACT & SHOP PAGE SETTINGS----*/
+#contact-page-info-container {
+    padding: 20px;
+}
 
+#contact-page-info-container p {
+    width: 80%;
+    margin-left: 12.5%;
+    background-color: var(--section-secondary);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
+  -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
+     -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
+    font-size: 22px;
+    
+}
 /*--Contact Form Section--*/
 #contact-form-container {
     background-image: url('../Assets/Images/Logos/background-art-big-3.jpg');
@@ -587,8 +602,6 @@ footer img {
     background-size: cover;
     background-position: center;
     margin-top: 0;
-    display: flex;
-    flex-direction: row;
     height: 800px;
     gap: 50px;
 }
@@ -603,9 +616,11 @@ footer img {
     margin-top: 60%;
 }
 
-#contact-form-list {
-    margin-left: 35%;
-    margin-top: 12%;
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 41%;
+    width: 15%;
     background-color: var(--section-primary);
     height: max-content;
     padding: 20px;
@@ -614,12 +629,58 @@ footer img {
     box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
   -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
      -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
+    transform: translateY(25%);
 }
 
-#contact-form-list li {
-    margin-bottom: 30px;
+#contact-form label {
+    text-align: center;
 }
 
+/*--Contact Form Styles for Input Fields--*/
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea,
+#contact-form select {
+    background-color: var(--section-primary);
+    color: var(--text-colour);
+    border: 2px solid var(--section-secondary);
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+/*----*/
+#contact-form input[type="text"]:focus,
+#contact-form input[type="email"]:focus,
+#contact-form textarea:focus,
+#contact-form select:focus {
+    outline: none; /* Removes the default outline */
+}
+
+
+/* Style the submit button */
+#contact-form button[type="submit"] {
+    background-color: var(--section-secondary); /* Blue background color */
+    color: var(--text-colour); /* White text color */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove default border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Change button background color on hover */
+#contact-form button[type="submit"]:hover {
+    background-color: rgb(0, 104, 159); /* Darker blue on hover */
+    color: white; /* Brighter text on hover */
+}
+
+#contact-form span {
+    font-size: 12px;
+    text-align: right;
+    transform: translateY(-15px);
+}
 /*--Find Me Lists--*/
 .find-me-list {
     display: flex;

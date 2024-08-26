@@ -13,6 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="Styles/main.css">
+        <script src="contactForm.js"></script>
     </head>
     <body class="bg-primary">
         <!--Contact & Shop Page-->
@@ -35,23 +36,37 @@
             <h1 class="section-title">Contact & Shop</h1>
             
             <!--Contact Page Information-->
-            <section id="contact-page-info-container" class="bg-secondary">
-                <p></p>
+            <section id="contact-page-info-container">
+                <p> Welcome to the Contact & Shop page! Here, you can easily reach out to me with any questions, feedback, or collaboration opportunities. Whether you're interested in discussing professional projects, have a general inquiry, or need support, please use the contact form below to get in touch. Additionally, you can follow the links at the bottom of the page to find my artworks and social media posts as well as my products in their relevant stores.</p>
             </section>
             
-            <!--Contact Form-->
+            <!-- Contact Form -->
             <h2 class="section-subheading">Contact Form</h2>
             <section id="contact-form-container">
-                <aside>
-                    <img src="Assets/Images/Logos/logo.jpg">
-                </aside>
-                <ul id="contact-form-list">
-                    <li>Name:</li>
-                    <li>Reason for contact</li>
-                    <li>Your message:</li>
-                    <li>Send button</li>
-                </ul>
+                <form id="contact-form">
+                    <label for="name">Your name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Your email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="reason">Reason for contact:</label>
+                    <select id="reason" name="reason" required>
+                        <option value="" disabled selected>Select a reason</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="support">Support</option>
+                        <option value="collaboration">Collaboration</option>
+                        <option value="job">Job Opportunity</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="8" maxlength="250" required></textarea>
+                    <span id="char-counter">0 / 250</span>
+
+                    <button type="submit">Send</button>
+                </form>
             </section>
+
             
             <!--Find me-->
             <section id="find-me-on-container">
