@@ -4,16 +4,16 @@ document.addEventListener("DOMContentLoaded", function() {
     const charCounter = document.getElementById("char-counter");
 
     const maxChars = 250;
-    charCounter.textContent = `0 / ${maxChars} characters`;
+    charCounter.textContent = `0 / ${maxChars}`;
 
     messageInput.addEventListener("input", function() {
         const charCount = messageInput.value.length;
-        charCounter.textContent = `${charCount} / ${maxChars} characters`;
+        charCounter.textContent = `${charCount} / ${maxChars}`;
 
-        if (charCount > maxChars) {
+        if (charCount >= maxChars) {
             charCounter.style.color = "red";
         } else {
-            charCounter.style.color = ""; // Reset color when under the limit
+            charCounter.style.color = "var(--text-colour)"; // Reset color when under the limit
         }
     });
 
