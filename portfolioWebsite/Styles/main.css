@@ -705,3 +705,60 @@ footer img {
     color: white;
     font-weight: 550;
 }
+
+/*----Responsive Styles----*/
+
+/*--Smartphones--*/
+@media (max-width: 480px) {
+    /*--Nav--*/
+    nav {
+        height: 0.7rem;
+        width: 100%;
+    }
+
+    /*--Nav Logo Settings--*/
+    nav img {
+        display: none;
+    }
+    
+     #nav-buttons-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
+        transform: translateX(-0.5%)
+        
+    }
+
+    .nav-button {
+        font-size: 8px;
+        border: 1px solid var(--section-secondary);
+        width: 3.7rem;
+    }
+
+
+    /*--Headings--*/
+    .section-title {
+        font-size: 18px;
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+
+    .section-subheading {
+        font-size: 16px;
+    }
+
+    .project-title {
+        font-size: 14px;
+    }
+
+
+}
+
+/*--Tablets--*/
+@media (min-width: 481px) and (max-width: 768px) {
+    
+     {
+        
+    }
+}
