@@ -1,20 +1,24 @@
 document.addEventListener("DOMContentLoaded", function() {
+    //Declare all variables and get elements from HTML
     var form = document.getElementById("contact-form");
     var messageInput = document.getElementById("message");
     var charCounter = document.getElementById("char-counter");
     var modal = document.getElementById("thank-you-modal");
     var modalMessage = document.getElementById("modal-message");
     var closeModalButton = document.getElementById("close-modal");
-
+    
+    //Initialise character counter max value
     var maxChars = 250;
     charCounter.textContent = `0 / ${maxChars}`;
-
+    
+    //Event listener to count how many characters are typed into the input
     messageInput.addEventListener("input", function() {
         var charCount = messageInput.value.length;
         charCounter.textContent = `${charCount} / ${maxChars}`;
-
+        
+        //If statement to check if the character limit is reached
         if (charCount >= maxChars) {
-            charCounter.style.color = "red"; //Changes text colour of character count to red when limit is reached
+            charCounter.style.color = "red"; //Changes text colour of character counter to red when limit is reached
         } 
         else {
             charCounter.style.color = "var(--text-colour)"; //Resets the colour when under the limit
@@ -31,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
         //Enables the use of return key to generate <br> in HTML
         var formattedMessage = userMessage.replace(/\n/g, "<br>");
         
-        //Sets custom confirmation message in HTML
+        //Sets custom message in HTML
         modalMessage.innerHTML = `
             <p>Thank you, <strong>${userName}</strong>!</p>
             <p><strong>Your message:</strong><br>"${formattedMessage}"</p>

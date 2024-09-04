@@ -13,6 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="Styles/main.css">
+        <script src="JavaScript/projectModal.js"></script>
         <script src="JavaScript/copyright.js"></script>
     </head>
     <body class="bg-primary">
@@ -44,8 +45,8 @@
             <!--Personal Projects List-->
             <section id="personal-projects-container">
                 <ul id="personal-projects-list" class="project-list">
-                    <li class="card">
-                        <img src="Assets/Images/Project Art/spectral-art.jpg" alt="Project art for the video game Spectral Shift">
+                    <li class="project-card">
+                        <img src="Assets/Images/Project Art/spectral-art.jpg" class="project-art" alt="Project art for the video game Spectral Shift">
                         <h3 class="project-title">Spectral Shift</h3>
                         <p class="project-description">Spectral Shift is a single-player puzzle-adventure game where players manipulate light and shadow to solve environmental challenges. Set in a mysterious, abandoned mansion, the game’s mechanics revolve around using a magical lantern to shift between different spectrums of light, revealing hidden paths and uncovering secrets.</p>
                         <h4 class="contributions-heading">Solo Project</h4>
@@ -55,8 +56,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="card">
-                        <img src="Assets/Images/Project Art/cityscape-art.jpg" alt="Project art for the video game Cityscape Speedster">
+                    <li class="project-card">
+                        <img src="Assets/Images/Project Art/cityscape-art.jpg" class="project-art" alt="Project art for the video game Cityscape Speedster">
                         <h3 class="project-title">Cityscape Speedster</h3>
                         <p class="project-description">Cityscape Speedster is fast paced multiplayer arcade racer set in a high-tech futuristic world. With many circuits to choose from players also get customisable vehicles and weapons. </p>
                         <h4 class="contributions-heading">Solo Project</h4>
@@ -83,8 +84,8 @@
                     <p>In this section, you'll find detailed insights into the projects I am currently developing, as well as those I am planning to embark on in the near future. These projects reflect my ongoing passion for game design and storytelling, showcasing the innovative ideas and creative concepts that drive my work. Whether it's the early stages of development or an exciting new concept on the horizon, this is where I share the journey of bringing these ideas to life.</p>
                 </aside>
                 <ul id="upcoming-projects-list" class="project-list">
-                    <li class="card">
-                        <img src="Assets/Images/Project Art/isles-art.jpg" alt="Project art for the video game Chronicles of the Forgotten Isles">
+                    <li class="project-card">
+                        <img src="Assets/Images/Project Art/isles-art.jpg" class="project-art" alt="Project art for the video game Chronicles of the Forgotten Isles">
                         <h3 class="project-title">Chronicles of the Forgotten Isles</h3>
                         <p class="project-description">Chronicles of the Forgotten Isles is planned as an open-world MMORPG adventure game where players explore a chain of mysterious islands, each filled with ancient ruins, hidden treasures, and dangerous creatures. The game will focus on exploration, environmental puzzles, and uncovering the history of the forgotten civilization that once inhabited the islands.</p>
                         <h4 class="contributions-heading">Planned Features</h4>
@@ -100,8 +101,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="card">
-                        <img src="Assets/Images/Project Art/astral-art.jpg" alt="Project art for the video game Astral Convergence">
+                    <li class="project-card">
+                        <img src="Assets/Images/Project Art/astral-art.jpg" class="project-art" alt="Project art for the video game Astral Convergence">
                         <h3 class="project-title">Astral Convergence</h3>
                         <p class="project-description">Inspired by my love of astronomy and stargazing, Astral Convergence is envisioned as a single-player action RPG set in a cosmic fantasy universe where players harness the powers of the stars to battle celestial beings. The game will feature a deep skill tree system that allows players to align with different constellations, unlocking unique abilities and combat styles based on their chosen star path.</p>
                         <h4 class="contributions-heading">Planned Features</h4>
@@ -119,6 +120,18 @@
                     </li>
                 </ul>
             </section>
+        </div>
+        
+        <!--Project Modal-->
+        <div id="project-modal" class="modal">
+            <div class="modal-content">
+                <span id="close-modal" class="close">&times;</span>
+                <img id="modal-image">
+                <h3 id="modal-title"></h3>
+                <p id="modal-description"></p>
+                <h4 id="modal-contributions-heading"></h4>
+                <ul id="modal-contributions"></ul>
+            </div>
         </div>
         
         <!--Footer-->

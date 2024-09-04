@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    //Declare all variables and get elements from HTML
     var copyrightButton = document.getElementById("copyright-button");
     var modal = document.getElementById("copyright-modal");
     var closeModalButton = document.getElementById("close-copyright-modal");

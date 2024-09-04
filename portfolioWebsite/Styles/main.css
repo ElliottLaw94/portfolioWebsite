@@ -67,6 +67,7 @@ p, h1, h2, h3, h4, h5, h6 {
   color: var(--section-primary);
 }
 
+
 /*----NAVIGATION BAR SETTINGS----*/
 
 /*--Nav tag settings--*/
@@ -77,29 +78,29 @@ nav {
     justify-content: center;
     text-align: center;
     position: -webkit-sticky;
-    position: sticky;
+    position: sticky; /*Keeps the nav bar stuck to the same position of the screen*/
     top: 0;
     height: 3rem;
-    opacity: 0.9;
+    opacity: 0.9; /*Makes nav bar partially transparent*/
     overflow-y: hidden;
-    z-index: 5;
+    z-index: 5; /*Keeps nav in front*/
     width: 100%;
     padding-top: 1.7rem;
     padding-bottom: 1.7rem;
 }
 
-/*--Nav Logo Settings--*/
+/*--Nav logo settings--*/
 nav img {
     border-radius: 200px;
     width: 150px;
     height: 150px;
-    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
+    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0); /*Adds shadow effect*/
   -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
      -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
 }
 
 
-/*--Nav Buttons List Settings--*/
+/*--Nav buttons list settings--*/
 #nav-buttons-list {
     display: flex;
     flex-direction: row;
@@ -108,11 +109,11 @@ nav img {
     transform: translateX(4%);
 }
 
-/*--Individual Nav Button Settings--*/
+/*--Individual nav button settings--*/
 .nav-button {
     padding: 0.6rem;
     font-size: 16px;
-    border: 2px solid var(--section-secondary);
+    border: 2px solid var(--section-secondary); /*Adds border colour and strength*/
     border-radius: 40px;
     text-align: center;
     width: 10.7rem;
@@ -120,20 +121,21 @@ nav img {
     box-sizing: border-box;
 }
 
-/*--Remove Hyperlink Unlerline--*/
+/*--Remove hyperlink unlerline--*/
 .nav-button:link {
     text-decoration: none;  
 }
 
-/*--Change Button with Mouse Hover--*/
+/*--Change button colour with mouse hover--*/
 .nav-button:hover {
     background-color: var(--section-secondary);
-    color: white;
+    color: white; /*Brighter text on hover*/
 }
+
 
 /*----FOOTER SETTINGS----*/
 
-/*--Footer Links div Settings--*/
+/*--Footer links div settings--*/
 #footer-links {
     display: flex;
     flex-direction: row;
@@ -144,6 +146,7 @@ nav img {
     overflow: hidden
 }
 
+/*--Style footer buttons list--*/
 #footer-buttons {
     display: flex;
     flex-direction: row;
@@ -153,37 +156,42 @@ nav img {
     right: 64%; 
 }
 
+/*--Style of individual footer buttons--*/
 .footer-button {
     text-align: center;
     font-size: 20px;
-    text-decoration: none;
-    border: 2px solid var(--section-primary);
-    border-radius: 40px;
+    text-decoration: none; /*Remove hyperlink underline*/
+    border: 2px solid var(--section-primary); /*Sets border colour and strength*/
+    border-radius: 40px; /*Rounded edges of border*/
     padding: 1rem;
     width: 6rem;
     display: inline-block;
     
 }
 
+/*--Change footer button colour on mouse hover--*/
 .footer-button:hover {
     background-color: var(--section-primary);
-    color: white;
-    cursor: pointer;
+    color: white; /*Brighter text on hover*/
+    cursor: pointer; /*Ensures cursor is a pointer on mouse hover*/
 }
 
+/*--Footer business logo size and positioning--*/
 #personal-logo {
     width: 150px;
     height: 150px;
     transform: translateY(2px);
-    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
+    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0); /*Adds shadow effect*/
   -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
      -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
 }
 
+/*--Footer logo round image--*/
 footer img {
-    border-radius: 200px;
+    border-radius: 200px; /*Round image*/
 }
 
+/*--Footer logos positioning--*/
 #footer-logos {
     display: flex;
     flex-direction: row;
@@ -193,15 +201,16 @@ footer img {
     transform: translateX(100%);
 }
 
+/*--Footer social media logos effects--*/
 #footer-logos img {
-    border-radius: 200px;
-    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
+    border-radius: 200px; /*Rounded images*/
+    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0); /*Adds shadow effect*/
   -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
      -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
 }
 
 
-/*----GENERAL CLASS SETTINGS----*/
+/*----GENERAL SETTINGS----*/
 
 /*--Headings--*/
 .section-title {
@@ -211,9 +220,9 @@ footer img {
     background-color: var(--section-primary);
     margin-top: 60px;
     margin-bottom: 25px;
-    text-shadow: 5px 5px black;
-    border-top: 2px solid var(--section-secondary);
-    border-bottom: 2px solid var(--section-secondary);
+    text-shadow: 5px 5px black; /*Sets a shadow behind the text*/
+    border-top: 2px solid var(--section-secondary); /*Sets top border colour and strength*/
+    border-bottom: 2px solid var(--section-secondary); /*Sets bottom border colour and strength*/
     padding: 10px;
 }
 
@@ -222,8 +231,8 @@ footer img {
     font-size: 28px;
     font-style: italic;
     padding-top: 10px;
-    text-shadow: 5px 5px black;
-    border-bottom: 2px solid var(--section-secondary);
+    text-shadow: 5px 5px black; /*Sets a shadow behind the text*/
+    border-bottom: 2px solid var(--section-secondary); /*Sets bottom border colour and strength*/
     padding-bottom: 5px;
 }
 
@@ -241,33 +250,30 @@ footer img {
 
 
 /*--Card Settings--*/
-.card {
+.project-card {
     position: relative;
     width: 300px;
-    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
+    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0); /*Adds shadow effect*/
   -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
      -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
     height: max-content;
     overflow: hidden;
-    transition: 1.0s ease;
+    transition: 1.0s ease; /*Sets the time for the transformation on hover*/
     border-radius: 20px;
 }
 
-.card img {
+.project-card img {
     width: 300px;
     height: 300px;
-    transition: 1.0s ease;
+    transition: 1.0s ease; /*Sets the time for the transformation on hover*/
 }
 
-.card:hover {
-  transform: translateY(-0.5rem);
-          box-shadow: 0px 3px 14px 2px rgba(0, 0, 15, 1.0);
-  -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 15, 1.0);
-     -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 15, 1.0);
+.project-card:hover {
+    transform: translateY(-0.5rem); /*Moves the card up*/
 }
 
-.card:hover img {
-    transform: scale(1.1);
+.project-card:hover img {
+    transform: scale(1.1); /*Increases scale of image on hover*/
     overflow: hidden;
     cursor: pointer;
 }
@@ -289,10 +295,93 @@ footer img {
 }
 
 .project-contributions {
-    list-style-type: disc;
-    padding-left: 22px;
+    list-style-type: disc; /*Sets the visibility of bullet points*/
+    padding-left: 22px; /*Creates space for the bullet points to be seen*/
     padding-bottom: 10px;
     background-color: var(--section-secondary);
+}
+
+
+/*----MODAL SETTINGS----*/
+
+/*--Default modal class settings--*/
+.modal {
+    display: none; /*Hidden by default*/
+    position: fixed; /*Keeps the modal in one position*/
+    top: 40%; /*Default top value*/
+    border-radius: 20px;
+    max-width: 30%; /*Keeps max width of modal at 30% of the viewport*/
+    background-color: var(--section-secondary);
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0); /*Adds shadow effect*/
+  -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
+     -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
+    z-index: 30; /*Keeps the modal at the very front*/
+}
+
+/*--Modal content box--*/
+.modal-content {
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 10px;
+    word-wrap: break-word; /*Keeps text from spilling over the width*/
+}
+
+/*--Modal close button styles--*/
+.close {
+    color: white;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.close:hover {
+    color: red; /*Change close button to red on hover*/
+    text-decoration: none; /*Ensure no underline*/
+    cursor: pointer;
+}
+
+/*--Copyright modal styles--*/
+#copyright-modal {
+    top: 76%; /*Renders the copyright modal just above the copyright button*/
+    left: 17%; 
+    bottom: 30px;
+    z-index: 10;
+    max-height: max-content;
+    padding: 15px;
+}
+
+/*Project modal styles--*/
+#project-modal {
+    left: 35%;
+    top: 11%;
+    text-align: center; /*Center project description text*/
+}
+
+#project-modal li {
+    list-style: disc;
+    text-align: left; /*List items placed from left to right*/
+    margin-left: 3%;
+    font-size: 20px; /*Increase font size for modal*/
+}
+
+#project-modal p {
+    font-size: 20px; /*Makes project font size bigger for modals*/
+}
+
+#project-modal h3 {
+    font-size: 22px; /*Makes project font size bigger for modals*/
+}
+
+#project-modal h4 {
+    font-size: 20px; /*Makes project font size bigger for modals*/
+}
+
+#project-modal img {
+    width: 370px; /*Sets the width of the project images to be bigger in a modal*/
 }
 
 
@@ -300,8 +389,8 @@ footer img {
 
 /*--Intro Video Settings--*/
 #intro-video-container {
-    height: 67vh;
-    overflow: hidden;
+    height: 67vh; /*Keeps the video to a standard view height across multiple screen sizez*/
+    overflow: hidden; /*Hides unnecessary parts of the video that overflow*/
 }
 
 #intro-video-container video {
@@ -323,66 +412,60 @@ footer img {
     height: max-content;
 }
 
+/*--introduction-container <p> settings--*/
 #introduction-container p {
     padding: 0.8rem;
     background-color: var(--section-secondary);
     height: max-content;
-    width: 50%;
-    border-radius: 20px;
-    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
+    width: 50%; /*Width to be 50% of #introduction-container*/
+    border-radius: 20px; /*Rounded corners*/
+    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0); /*Adds shadow effect*/
   -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
      -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
-    margin-top: 3%;
+    margin-top: 3%; /*Spacing from the the top of the container*/
     font-size: 20px;
 }
 
 #introduction-container img {
+    /*Height and width of logo*/
     width: 330px;
     height: 330px;
-    border-radius: 200px;
-    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
+    border-radius: 200px; /*Round image*/
+    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0); /*Adds shadow effect*/
   -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
      -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
-    margin-top: 12%;
+    margin-top: 12%; /*Spacing from the the top of the container*/
 }
 
 /*--Latest Work Section--*/
 #latest-work-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*Display items from top to bottom*/
     align-items: center;
     }
 
 #latest-work-container img {
-    width: 700px;
-    height: 400px;
-    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
+    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0); /*Adds shadow effect*/
   -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
      -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
     margin-bottom: 1.3%;
 }
 
-#latest-work-container img:hover {
-    transform: scale(1.1);
-    transition: transform 1.0s ease;
-    cursor: pointer;
+#latest-work-container h2 {
+    padding: 0; 
+    margin-bottom: 0.5%; /*Spacing between the border and the <p>*/
 }
 
 #latest-work-container p {
     width: 60%;
     height 60%;
     background-color: var(--section-secondary);
-    border-radius: 20px;
+    border-radius: 20px; /*Rounded corners*/
     padding: 0.8rem;
-    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
+    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0); /*Adds shadow effect*/
   -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
      -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
-    margin-bottom: 5%;
-}
-
-#latest-work-container h2 {
-    padding: 0; 
-    margin-bottom: 0.5%;
+    margin-bottom: 5%; /*Spacing from footer*/
 }
 
 
@@ -392,34 +475,34 @@ footer img {
 #recent-projects-container {
     display: flex;
     flex-direction: row; 
-    justify-content: space-evenly;
-    gap: 5rem;
-    transform: translateY(2%);
-    height: 950px;
+    justify-content: space-evenly; /*Ensures items are spaced evenly*/
+    gap: 5rem; /*Sets gap between items*/
+    margin-top: 1%; /*Spacing from the top of the container*/
+    height: max-content;
 }
 
 #recent-projects-container aside p {
     background-color: var(--section-secondary);
-    width: 35vh;
+    width: 30vh;
     height: max-content;
     padding: 20px;
-    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
+    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0); /*Adds shadow effect*/
   -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
      -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
-    margin-left: 20%;
-    border-radius: 20px;
-    margin-top: 35%;
+    margin-left: 20%; /*Space from the left/*
+    border-radius: 20px; /*Rounded corners*/
+    margin-top: 35%; /*Space from the top*/
     font-size: 20px;
 }
 
 /*--Older Projects Section--*/
 #older-projects-container {
-    padding-top: 100px;
-    padding-bottom: 150px;
+    padding-top: 100px; /*Spacing from the top*/
+    padding-bottom: 150px; /*Spacing from the bottom*/
 }
 
 #older-projects-list {
-    margin-top: 1%;
+    margin-top: 1%; /*Gap betwen the list and the top border of the container*/
 }
 
 
@@ -427,54 +510,54 @@ footer img {
 
 /*--Personal Projects Section--*/
 #about-personal-projects-container {
-    width: 80%;
-    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
+    width: 80%; /*Sets the width to be 80% of the viewport*/
+    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0); /*Adds shadow effect*/
   -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
      -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
-    transform: translateX(12.5%);
-    border-radius: 20px;
+    margin-left: 12.5%; /*Spacing from the left*/
+    border-radius: 20px; /*Rounded corners*/
     padding: 10px;
-    margin-bottom: 2rem;;
+    margin-bottom: 2rem; /*Spacing from the bottom*/
 }
 
 #about-personal-projects-container p {
-    font-size: 20px;
+    font-size: 20px; /*Sets larger text size*/
 }
 
 #personal-projects-container {
-    padding-bottom: 3rem;
+    padding-bottom: 3rem; /*Spacing from the bottom border*/
 }
 
 #personal-projects-list {
-    gap: 16rem;
+    gap: 16rem; /*Sets gap between items*/
 }
 
 /*--Upcoming Projects Section--*/
 #upcoming-projects-container {
     display: flex;
-    flex-direction: row;
-    margin-top: 2%;
-    padding-bottom: 5rem;
-    margin-right: 12.5%;
+    flex-direction: row; /*Displays items in a row*/
+    margin-top: 2%; /*Spacing from the top*/
+    padding-bottom: 5rem; /*Spacing from the bottom*/
+    margin-right: 12.5%; /*Spacing from the right*/
 
 }
 
 #upcoming-projects-container aside p {
     background-color: var(--section-secondary);
     padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
+    border-radius: 20px; /*Rounded corners*/
+    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0); /*Adds shadow effect*/
   -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
      -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
-    width: 50%;
+    width: 50%; /*Sets width to be 50% of the container*/
     height: max-content;
-    margin-left: 8rem;
-    font-size: 20px;
-    margin-top: 25%;
+    margin-left: 8rem; /*Spacing from the left*/
+    font-size: 20px; /*Sets larger font size*/
+    margin-top: 25%; /*Spacing from the top border*/
 }
 
 #upcoming-projects-list {
-    gap: 8rem;
+    gap: 8rem; /*Sets gap between items*/
 }
 
 
@@ -484,150 +567,153 @@ footer img {
 #about-me-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
-    background-image: url('../Assets/Images/Logos/background-art-big-2.jpg');
+    justify-content: center; /*Centers all items*/
+    gap: 2rem; /*Sets gap between items*/
+    background-image: url('../Assets/Images/Logos/background-art-big-2.jpg'); /*Uses background image*/
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right;
+    background-position: right; /*Aligns the image to where I want it to be*/
     height: 600px;
-    overflow: hidden;
-    
+    overflow: hidden; /*Hides any overflow from the background*/
 }
 
+/*--Profile picture styles--*/
 #about-me-container img {
-    width: 300px;
-    height: 300px;
-    border-radius: 200px;
-    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
+    width: 300px; /*Sets image width*/
+    height: 300px; /*Sets image height*/
+    border-radius: 200px; /*Round image*/
+    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0); /*Adds shadow effect*/
   -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
      -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
-    margin-top: 40%;
+    margin-top: 40%; /*Spacing from the top*/
 }
 
+/*--About me text styles--*/
 #about-me-container p {
     background-color: var(--section-primary);
     border: 2px solid var(--section-secondary);
-    border-radius: 20px;
+    border-radius: 20px; /*Round corners*/
     padding: 40px;
-    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
+    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0); /*Adds shadow effect*/
   -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
      -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
     height: max-content;
-    width: 30%;
-    
-    margin-top: 7%;
+    width: 30%; /*Sets width to be 30% of the container*/
+    margin-top: 7%; /*Spacing from the top*/
 }
 
-/*--Knowledge & Skills + References Sections--*/
-
+/*--Knowledge & Skills sections--*/
 .skill-ref-container {
     display: flex;
-    flex-direction: column;
-    margin-top: 1%;
+    flex-direction: column; /*Display items downward*/
+    margin-top: 1%; /*Spacing from the top*/
 }
 
 .skill-ref-list {
     padding: 20px;
-    list-style: disc;
+    list-style: disc; /*Displays bullet points*/
 }
 
 #knowledge-list {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 10%; /*Spacing from the left*/
+    margin-right: 10%; /*Spacing from the right*/
 }
 
 #qualification-list {
-    margin-left: 25%;
+    margin-left: 25%; /*Spacing from the left*/
 }
 
+/*--References section--*/
 #references {
-    background-image: url('../Assets/Images/Logos/background-art-big.jpg');
+    background-image: url('../Assets/Images/Project Art/background-art-big.jpg'); /*Sets the background image*/
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: bottom; /*Sets the background image position to where I want it to be*/
     margin-top: 0;
     align-items: center;
 }
 
 #references-list {
-    list-style: none;
+    list-style: none; /*Removes bullet points*/
 }
 
 .reference-people img {
-    height: 125px;
-    width: 210px;
-    border-radius: 20px;
+    height: 125px; /*Sets height of image*/
+    width: 210px; /*Sets width of image*/
+    border-radius: 20px; /*Round corners*/
 }
 
 .reference-people {
     display: flex; 
     flex-direction: row;
-    gap: 30px;
+    gap: 30px; /*Sets gap between items*/
     margin-bottom: 30px;
     background-color: var(--section-primary);
-    border: 2px solid var(--section-secondary);
-    border-radius: 20px;
-    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
+    border: 2px solid var(--section-secondary); /*Sets border colour and strength*/
+    border-radius: 20px; /*Round corners*/
+    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0); /*Adds shadow effect*/
   -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
      -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
 }
 
+/*References text sections*/
 .reference-info {
     display: flex;
-    flex-direction: column;
-    margin-top: 1%;
-    padding-right: 2%;
+    flex-direction: column; /*Displays the reference text information as a column*/
+    margin-top: 1%; /*Spacing from top*/
+    padding-right: 2%; /*Spacing from right*/
 }
 
 
 /*----CONTACT & SHOP PAGE SETTINGS----*/
+
+/*--Contact page information settings--*/
 #contact-page-info-container {
     padding: 20px;
     display: flex;
-    justify-content: center
+    justify-content: center; /*Brings text to center*/
 }
 
 #contact-page-info-container p {
-    width: 60%;
+    width: 60%; /*Sets width of text to be 60% of the container*/
     background-color: var(--section-secondary);
-    border-radius: 20px;
+    border-radius: 20px; /*Round corners*/
     padding: 20px;
-    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
+    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0); /*Adds shadow effect*/
   -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
      -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
-    font-size: 22px;
-    
+    font-size: 20px; /*Sets larger font size*/ 
 }
+
 /*--Contact Form Section--*/
 #contact-form-container {
-    background-image: url('../Assets/Images/Logos/background-art-big-3.jpg');
+    background-image: url('../Assets/Images/Logos/background-art-big-3.jpg'); /*Sets background image*/
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    margin-top: 0;
-    height: 48rem;
+    background-position: center; /*Sets position of background to where I want it to be*/
+    margin-top: 0; /*Removes any margins*/
+    height: 48rem; /*Sets height of container*/
     display: flex;
-    justify-content: center
+    justify-content: center; /*Holds the contact form in the center*/
 }
 
 #contact-form {
     display: flex;
     flex-direction: column;
-    width: 17%;
+    width: 17%; /*Sets width of the form to be 17% of the container*/
     background-color: var(--section-primary);
     height: max-content;
     padding: 20px;
-    border-radius: 20px;
-    border: 2px solid var(--section-secondary);
-    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
+    border-radius: 20px; /*Round corners*/
+    border: 2px solid var(--section-secondary); /*Sets border colour and strength*/
+    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0); /*Adds shadow effect*/
   -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
      -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
-    transform: translateY(20%);
+    margin-top: 8%; /*Spacing from the top*/
 }
 
 #contact-form label {
-    text-align: center;
+    text-align: center; /*Centers all labels in the contact form*/
 }
 
 /*--Contact Form Styles for Input Fields--*/
@@ -637,7 +723,7 @@ footer img {
 #contact-form select {
     background-color: var(--section-primary);
     color: var(--text-colour);
-    border: 2px solid var(--section-secondary);
+    border: 2px solid var(--section-secondary); /*Sets border colour and strength*/
     padding: 10px;
     margin-bottom: 15px;
     width: 100%;
@@ -645,22 +731,22 @@ footer img {
     border-radius: 20px;
 }
 
-/*----*/
+/*--Contact form inputs styles on focus--*/
 #contact-form input[type="text"]:focus,
 #contact-form input[type="email"]:focus,
 #contact-form textarea:focus,
 #contact-form select:focus {
-    outline: none; /* Removes the default outline */
+    outline: none; /*Removes the default outline*/
 }
 
 
 /*--Submit Button Styles--*/
 #contact-form button[type="submit"] {
-    background-color: var(--section-secondary); /* Blue background color */
-    color: var(--text-colour); /* White text color */
-    padding: 10px 20px; /* Padding for the button */
-    border: none; /* Remove default border */
-    border-radius: 20px; /* Rounded corners */
+    background-color: var(--section-secondary);
+    color: var(--text-colour);
+    padding: 10px;
+    border: none; /*Remove default border*/
+    border-radius: 20px; /*Round corners*/
     cursor: pointer; /*Pointer cursor on hover*/
 }
 
@@ -670,115 +756,48 @@ footer img {
     color: white; /*Brighter text on hover*/
 }
 
+/*--Contact form character counter styles--*/
 #contact-form span {
     font-size: 12px;
     text-align: right;
-    transform: translateY(-0.9rem);
+    transform: translateY(-0.9rem); /*Holds the character counter at the correct position*/
 }
 
-/*--Modal Styles--*/
-.modal {
-    display: none; /*Hidden by default*/
-    position: fixed;
-    top: 40%;
-    border-radius: 20px;
-    max-width: 30%;
-    background-color: var(--section-primary);
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
-  -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
-     -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
-    z-index: 30;
-}
-
-/* Modal content box */
-.modal-content {
-    background-color: var(--section-secondary);
-    margin: none;
-    overflow: hidden;
-    border-radius: 20px;
-    padding: 20px;
-    word-wrap: break-word;
-}
-
-/* Close button (X) */
-.close {
-    color: white;
-    float: right;
-    font-size: 30px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-    color: red;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-#copyright-modal {
-    top: 76%;
-    left: 17%; 
-    bottom: 30px;
-    z-index: 10;
-}
-
-#project-modal {
-    background-color: var(--section-primary);
-    left: 40%;
-    top: 9%;  
-    text-align: center;
-}
-
-#project-modal li {
-    list-style: disc;
-    text-align: left;
-    margin-left: 3%;
-    font-size: 19px;
-}
-
-#project-modal p {
-    font-size: 19px;
-}
-
-#project-modal h3 {
-    font-size: 22px;
-}
-
-/*--Find Me Lists--*/
+/*--"Find me" lists--*/
 .find-me-list {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 15%;
-    height: 100px;
-    margin-top: 20px;
+    justify-content: center; /*Brings items to the center*/
+    gap: 15%; /*Sets the gap between items*/
+    height: 100px; /*Height of the lists*/
+    margin-top: 20px; /*Spacing from the top border of the section*/
 }
 
+/*--"Find me" list individual items styles--*/
 .find-me-list li {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*Show image over text*/
     text-align: center;
 }
 
-.find-me-list a {
-    text-decoration: none;
+.find-me-list li:hover {
+    transform: scale(1.06); /*Increase the scale of the logos on hover*/
+    color: white; /*Makes text brighter on hover*/
+    font-weight: 550; /*Increase font-weight on hover*/
 }
 
+.find-me-list a {
+    text-decoration: none; /*Remove hyperlink underline*/
+}
+
+/*--"Find me" list logo styles--*/
 .find-me-list img {
-    border-radius: 200px;
-    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
+    border-radius: 200px; /*Round images*/
+    box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0); /*Adds shadow effect*/
   -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
      -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
 }
 
-.find-me-list li:hover {
-    transform: scale(1.06);
-    color: white;
-    font-weight: 550;
-}
 
 /*----Responsive Styles----*/
 
