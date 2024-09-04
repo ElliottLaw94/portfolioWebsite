@@ -13,7 +13,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="Styles/main.css">
-        <script src="contactForm.js"></script>
+        <script src="JavaScript/contactForm.js"></script>
+        <script src="JavaScript/copyright.js"></script>
     </head>
     <body class="bg-primary">
         <!--Contact & Shop Page-->
@@ -65,6 +66,13 @@
 
                     <button type="submit">Send</button>
                 </form>
+                <!--Modal for Thank You and Confirmation Message-->
+                <div id="thank-you-modal" class="modal">
+                    <div class="modal-content">
+                        <span id="close-modal" class="close">&times;</span>
+                        <div id="modal-message"></div> <!--Holds the confirmation message-->
+                    </div>
+                </div>
             </section>
 
             
@@ -73,23 +81,23 @@
                 <h2 class="section-subheading">Find me on</h2>
                 <ul class="find-me-list">
                     <li>
-                        <a href="https://www.github.com"><img src="Assets/Images/Logos/github-logo.png"></a>
+                        <a href="https://www.github.com"><img src="Assets/Images/Logos/github-logo.png" alt="Github logo"></a>
                         <a href="https://www.github.com">Github</a>
                     </li>
                     <li>
-                        <a href="https://www.artstation.com"><img src="Assets/Images/Logos/artstation-logo.jpg"></a>
+                        <a href="https://www.artstation.com"><img src="Assets/Images/Logos/artstation-logo.jpg" alt="Artstation logo"></a>
                         <a href="https://www.artstation.com">Artstation</a>
                     </li>
                     <li>
-                        <a href="https://www.x.com"><img src="Assets/Images/Logos/x-logo.png"></a>
+                        <a href="https://www.x.com"><img src="Assets/Images/Logos/x-logo.png" alt="X logo"></a>
                         <a href="https://www.x.com">X</a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com"><img src="Assets/Images/Logos/instagram-logo.png"></a>
+                        <a href="https://www.instagram.com"><img src="Assets/Images/Logos/instagram-logo.png" alt="Instagram logo"></a>
                         <a href="https://www.instagram.com">Instagram</a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com"><img src="Assets/Images/Logos/facebook-logo.png"></a>
+                        <a href="https://www.facebook.com"><img src="Assets/Images/Logos/facebook-logo.png" alt="Facebook logo"></a>
                         <a href="https://www.facebook.com">Facebook</a>
                     </li>
                 </ul>
@@ -100,15 +108,15 @@
                 <h2 class="section-subheading">Find my work</h2>
                 <ul class="find-me-list">
                     <li>
-                        <a href="https://store.steampowered.com"><img src="Assets/Images/Logos/steam-logo.png"></a>
+                        <a href="https://store.steampowered.com"><img src="Assets/Images/Logos/steam-logo.png" alt="Steam logo"></a>
                         <a href="https://store.steampowered.com">Steam</a>
                     </li>
                     <li>
-                        <a href="https://store.playstation.com"><img src="Assets/Images/Logos/playstation-logo.jpg"></a>
+                        <a href="https://store.playstation.com"><img src="Assets/Images/Logos/playstation-logo.jpg" alt="Playstation logo"></a>
                         <a href="https://store.playstation.com">Playstation</a>
                     </li>
                     <li>
-                        <a href="https://www.xbox.com"><img src="Assets/Images/Logos/xbox-logo.png"></a>
+                        <a href="https://www.xbox.com"><img src="Assets/Images/Logos/xbox-logo.png" alt="Xbox logo"></a>
                         <a href="https://www.xbox.com">Xbox</a>
                     </li>
                 </ul>
@@ -120,7 +128,7 @@
             <div id="footer-links" class="bg-secondary">
                 <ul id="footer-buttons">
                     <li><a href="contact.html" class="footer-button">Contact</a></li>
-                    <li><a href="???" class="footer-button">Copyright</a></li>
+                    <li><a id="copyright-button" class="footer-button">Copyright</a></li>
                 </ul>
                 <a href="index.html"><img src="Assets/Images/Logos/logo.jpg" alt="Business logo for C Elliott Lawson" id="personal-logo"></a>
                 <ul id="footer-logos">
@@ -128,6 +136,14 @@
                     <li><a href="https://www.facebook.com/"><img src="Assets/Images/Logos/facebook-logo.png" class="footer-logo" alt="Facebook Logo" width="50"></a></li>
                     <li><a href="https://twitter.com/"><img src="Assets/Images/Logos/x-logo.png" class="footer-logo" alt="X Logo" width="50"></a></li>
                 </ul>
+            </div>
+            <!-- Modal for Copyright Information -->
+            <div id="copyright-modal" class="modal">
+                <div class="modal-content">
+                    <span id="close-copyright-modal" class="close">&times;</span>
+                    <p>&copy; 2024 C Elliott Lawson. All rights reserved.</p>
+                    <p>This website and its content are the property of C. Elliott Lawson. Unauthorized use or reproduction is prohibited.</p>
+                </div>
             </div>
         </footer>
     </body>

@@ -13,6 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="Styles/main.css">
+        <script src="JavaScript/copyright.js"></script>
     </head>
     <body class="bg-primary">
         <!--Skills & References Page-->
@@ -40,7 +41,7 @@
             <h2 class="section-subheading">About Me</h2>
             <section id="about-me-container">
                 <aside>
-                    <img src="Assets/Images/Logos/profile-pic.jpg">
+                    <img src="Assets/Images/Logos/profile-pic.jpg" alt="Profile picture of C. Elliott Lawson">
                 </aside>
                 <p>My name is C. Elliott Lawson, a game developer and designer with a unique blend of experiences that have shaped my creative approach over the past decade. Before stepping into the world of game development, I spent 10 years as a mixologist and bar manager, where I mastered the art of crafting memorable experiences. This background not only honed my attention to detail and passion for storytelling but also pushed the boundaries of my creativity, enabling me to think outside the box and approach game design with a fresh perspective.</p>
             </section>
@@ -72,7 +73,7 @@
             <section class="skill-ref-container" id="references">
                 <ul id="references-list" class="skill-ref-list">
                     <li class="reference-people">
-                        <img src="Assets/Images/Logos/ubisoft-logo.jpg">
+                        <img src="Assets/Images/Logos/ubisoft-logo.jpg" alt="Ubisoft logo">
                         <div class="reference-info">
                         <h4>Riley Brooks</h4>
                         <p>Title: Creative Director<br>
@@ -81,7 +82,7 @@
                         </div>
                     </li>
                     <li class="reference-people">
-                        <img src="Assets/Images/Logos/ps-studios-logo.jpg">
+                        <img src="Assets/Images/Logos/ps-studios-logo.jpg" alt="Playstation logo">
                         <div class="reference-info">
                         <h4>Avery Patel</h4>
                         <p>Title: Lead Narrative Developer<br>
@@ -90,7 +91,7 @@
                         </div>
                     </li>
                     <li class="reference-people">
-                        <img src="Assets/Images/Logos/xbox-logo-2.jpg">
+                        <img src="Assets/Images/Logos/xbox-logo-2.jpg" alt="Xbox Game Studios logo">
                         <div class="reference-info">
                         <h4>Jordan Thompson</h4>
                         <p>Title: Senior Game Designer<br>
@@ -99,7 +100,7 @@
                         </div>
                     </li>
                     <li class="reference-people">
-                        <img src="Assets/Images/Logos/ea-logo.jpg">
+                        <img src="Assets/Images/Logos/ea-logo.jpg" alt="EA Electronic Arts logo">
                         <div class="reference-info">
                         <h4>Morgan Lee</h4>
                         <p>Title: Principal Level Designer<br>
@@ -116,7 +117,7 @@
             <div id="footer-links" class="bg-secondary">
                 <ul id="footer-buttons">
                     <li><a href="contact.html" class="footer-button">Contact</a></li>
-                    <li><a href="???" class="footer-button">Copyright</a></li>
+                    <li><a id="copyright-button" class="footer-button">Copyright</a></li>
                 </ul>
                 <a href="index.html"><img src="Assets/Images/Logos/logo.jpg" alt="Business logo for C Elliott Lawson" id="personal-logo"></a>
                 <ul id="footer-logos">
@@ -124,6 +125,14 @@
                     <li><a href="https://www.facebook.com/"><img src="Assets/Images/Logos/facebook-logo.png" class="footer-logo" alt="Facebook Logo" width="50"></a></li>
                     <li><a href="https://twitter.com/"><img src="Assets/Images/Logos/x-logo.png" class="footer-logo" alt="X Logo" width="50"></a></li>
                 </ul>
+            </div>
+            <!-- Modal for Copyright Information -->
+            <div id="copyright-modal" class="modal">
+                <div class="modal-content">
+                    <span id="close-copyright-modal" class="close">&times;</span>
+                    <p>&copy; 2024 C Elliott Lawson. All rights reserved.</p>
+                    <p>This website and its content are the property of C. Elliott Lawson. Unauthorized use or reproduction is prohibited.</p>
+                </div>
             </div>
         </footer>
     </body>

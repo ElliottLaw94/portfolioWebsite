@@ -13,6 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="Styles/main.css">
+        <script src="JavaScript/copyright.js"></script>
     </head>
     <body class="bg-primary">
         <!--Professional Projects Page-->
@@ -44,22 +45,24 @@
             <section id="personal-projects-container">
                 <ul id="personal-projects-list" class="project-list">
                     <li class="card">
-                        <img src="Assets/Images/Project Art/spectral-art.jpg">
+                        <img src="Assets/Images/Project Art/spectral-art.jpg" alt="Project art for the video game Spectral Shift">
                         <h3 class="project-title">Spectral Shift</h3>
                         <p class="project-description">Spectral Shift is a single-player puzzle-adventure game where players manipulate light and shadow to solve environmental challenges. Set in a mysterious, abandoned mansion, the game’s mechanics revolve around using a magical lantern to shift between different spectrums of light, revealing hidden paths and uncovering secrets.</p>
+                        <h4 class="contributions-heading">Solo Project</h4>
                         <ul class="project-contributions">
                             <li>
-                                Solo project - inspired by my fascination with the light spectrum and how different creatures percieve light differently from others.
+                                Inspired by my fascination with the light spectrum and how different creatures percieve light differently from others.
                             </li>
                         </ul>
                     </li>
                     <li class="card">
-                        <img src="Assets/Images/Project Art/cityscape-art.jpg">
+                        <img src="Assets/Images/Project Art/cityscape-art.jpg" alt="Project art for the video game Cityscape Speedster">
                         <h3 class="project-title">Cityscape Speedster</h3>
                         <p class="project-description">Cityscape Speedster is fast paced multiplayer arcade racer set in a high-tech futuristic world. With many circuits to choose from players also get customisable vehicles and weapons. </p>
+                        <h4 class="contributions-heading">Solo Project</h4>
                         <ul class="project-contributions">
                             <li>
-                                Solo Project - Developed the core racing mechanics, including responsive controls, weapons, drifting, and boost systems.
+                                Developed the core racing mechanics, including responsive controls, weapons, drifting, and boost systems.
                             </li>
                             <li>
                                 Designed a variety of race tracks with unique layouts, obstacles and visual themes.
@@ -81,12 +84,12 @@
                 </aside>
                 <ul id="upcoming-projects-list" class="project-list">
                     <li class="card">
-                        <img src="Assets/Images/Project Art/isles-art.jpg">
+                        <img src="Assets/Images/Project Art/isles-art.jpg" alt="Project art for the video game Chronicles of the Forgotten Isles">
                         <h3 class="project-title">Chronicles of the Forgotten Isles</h3>
                         <p class="project-description">Chronicles of the Forgotten Isles is planned as an open-world MMORPG adventure game where players explore a chain of mysterious islands, each filled with ancient ruins, hidden treasures, and dangerous creatures. The game will focus on exploration, environmental puzzles, and uncovering the history of the forgotten civilization that once inhabited the islands.</p>
+                        <h4 class="contributions-heading">Planned Features</h4>
                         <ul class="project-contributions">
                             <li>
-                                Planned Features:<br>
                                  A vast archipelago to explore, with each island offering unique biomes, puzzles, and secrets.
                             </li>
                             <li>
@@ -98,12 +101,12 @@
                         </ul>
                     </li>
                     <li class="card">
-                        <img src="Assets/Images/Project Art/astral-art.jpg">
+                        <img src="Assets/Images/Project Art/astral-art.jpg" alt="Project art for the video game Astral Convergence">
                         <h3 class="project-title">Astral Convergence</h3>
                         <p class="project-description">Inspired by my love of astronomy and stargazing, Astral Convergence is envisioned as a single-player action RPG set in a cosmic fantasy universe where players harness the powers of the stars to battle celestial beings. The game will feature a deep skill tree system that allows players to align with different constellations, unlocking unique abilities and combat styles based on their chosen star path.</p>
+                        <h4 class="contributions-heading">Planned Features</h4>
                         <ul class="project-contributions">
                             <li>
-                                Planned Features:<br>
                                 A vast, open-world environment with diverse celestial realms, each with its own unique challenges and lore.
                             </li>
                             <li>
@@ -123,7 +126,7 @@
             <div id="footer-links" class="bg-secondary">
                 <ul id="footer-buttons">
                     <li><a href="contact.html" class="footer-button">Contact</a></li>
-                    <li><a href="???" class="footer-button">Copyright</a></li>
+                    <li><a id="copyright-button" class="footer-button">Copyright</a></li>
                 </ul>
                 <a href="index.html"><img src="Assets/Images/Logos/logo.jpg" alt="Business logo for C Elliott Lawson" id="personal-logo"></a>
                 <ul id="footer-logos">
@@ -131,6 +134,14 @@
                     <li><a href="https://www.facebook.com/"><img src="Assets/Images/Logos/facebook-logo.png" class="footer-logo" alt="Facebook Logo" width="50"></a></li>
                     <li><a href="https://twitter.com/"><img src="Assets/Images/Logos/x-logo.png" class="footer-logo" alt="X Logo" width="50"></a></li>
                 </ul>
+            </div>
+            <!-- Modal for Copyright Information -->
+            <div id="copyright-modal" class="modal">
+                <div class="modal-content">
+                    <span id="close-copyright-modal" class="close">&times;</span>
+                    <p>&copy; 2024 C Elliott Lawson. All rights reserved.</p>
+                    <p>This website and its content are the property of C. Elliott Lawson. Unauthorized use or reproduction is prohibited.</p>
+                </div>
             </div>
         </footer>
     </body>

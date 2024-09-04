@@ -13,6 +13,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="Styles/main.css">
+        <script src="JavaScript/projectModal.js"></script>
+        <script src="JavaScript/copyright.js"></script>
     </head>
     
     <body class="bg-primary">
@@ -44,7 +46,7 @@
                 </aside>
                 <ul id="recent-projects-list" class="project-list">
                     <li class="card">
-                        <img src="Assets/Images/Project Art/echoes-art.jpg">
+                        <img src="Assets/Images/Project Art/echoes-art.jpg" class="project-art" alt="Project art for the video game Echoes of the Past">
                         <h3 class="project-title">Echoes of the Past</h3>
                         <p class="project-description">Echoes of the Past is an action-adventure game set in a mythological world inspired by ancient civilizations. Players take on the role of a hero chosen by the gods to restore balance to the world by solving puzzles, battling mythical creatures, and uncovering hidden secrets. The game features a rich narrative, intricate level design, and a dynamic combat system.</p>
                         <h4 class="contributions-heading">Key Contributions</h4>
@@ -61,7 +63,7 @@
                         </ul>
                     </li>
                     <li class="card">
-                        <img src="Assets/Images/Project Art/cyber-art.jpg">
+                        <img src="Assets/Images/Project Art/cyber-art.jpg" class="project-art" alt="Project art for the video game Cyber Nexus">
                         <h3 class="project-title">Cyber Nexus</h3>
                         <p class="project-description">Cyber Nexus is a strategy game set in a futuristic city where players control a network of hackers working to take down corrupt mega-corporations. The game combines real-time strategy with resource management, requiring players to carefully plan their moves, gather intel, and execute cyber-attacks to achieve their objectives.</p>
                         <h4 class="contributions-heading">Key Contributions</h4>
@@ -78,7 +80,7 @@
                         </ul>
                     </li>
                     <li class="card">
-                        <img src="Assets/Images/Project Art/solaris-art.jpg">
+                        <img src="Assets/Images/Project Art/solaris-art.jpg" class="project-art" alt="Project art for the video game Solaris Odyssey">
                         <h3 class="project-title">Solaris Odyssey</h3>
                         <p class="project-description">Solaris Odyssey is a space exploration RPG that allows players to captain their own spaceship, explore distant galaxies, and engage in tactical space combat. The game features a procedurally generated universe, offering endless exploration opportunities and unique encounters.</p>
                         <h4 class="contributions-heading">Key Contributions</h4>
@@ -102,7 +104,7 @@
                 <h2 class="section-subheading">Older Projects</h2>
                 <ul id="older-projects-list" class="project-list">
                     <li class="card">
-                        <img src="Assets/Images/Project Art/eclipse-art.jpg">
+                        <img src="Assets/Images/Project Art/eclipse-art.jpg" class="project-art" alt="Project art for the video game Eclipse">
                         <h3 class="project-title">Eclipse</h3>
                         <p class="project-description">Eclipse is an interactive visual novel that blends romance, mystery, and supernatural elements. Set in a small town where nothing is as it seems, players must uncover the truth behind a series of strange events while navigating complex relationships. The story is driven by character interactions, with multiple story paths and endings based on player decisions.</p>
                         <h4 class="contributions-heading">Key Contributions</h4>
@@ -119,7 +121,7 @@
                         </ul>
                     </li>
                     <li class="card">
-                        <img src="Assets/Images/Project Art/guardians-art.jpg">
+                        <img src="Assets/Images/Project Art/guardians-art.jpg" class="project-art" alt="Project art for the video game Guardians of the Elements">
                         <h3 class="project-title">Guardians of the Elements</h3>
                         <p class="project-description">Guardians of the Elements is a strategy-based RPG where players command a team of elemental warriors, each embodying a different natural force. Set in a world divided into elemental realms, players must strategically deploy their characters in battles that take advantage of the environment’s elemental properties.</p>
                         <h4 class="contributions-heading">Key Contributions</h4>
@@ -133,7 +135,7 @@
                         </ul>
                     </li>
                     <li class="card">
-                        <img src="Assets/Images/Project Art/abyss-art.jpg">
+                        <img src="Assets/Images/Project Art/abyss-art.jpg" class="project-art" alt="Project art for the video game Pull of the Abyss">
                         <h3 class="project-title">Pull of the Abyss</h3>
                         <p class="project-description">Pull of the Abyss is a psychological horror game that delves into the human psyche. Players take on the role of a detective investigating a series of mysterious disappearances in a small coastal town. The story is filled with eerie twists, supernatural elements, and a deep exploration of the protagonist’s fears and inner demons.</p>
                         <h4 class="contributions-heading">Key Contributions</h4>
@@ -147,7 +149,7 @@
                         </ul>
                     </li>
                     <li class="card">
-                        <img src="Assets/Images/Project Art/neon-art.jpg">
+                        <img src="Assets/Images/Project Art/neon-art.jpg" class="project-art" alt="Project art for the video game Neon Skies">
                         <h3 class="project-title">Neon Skies</h3>
                         <p class="project-description">Neon Skies is a cyberpunk platformer set in a sprawling futuristic city. Players navigate through towering skyscrapers, neon-lit alleyways, and underground tech labs as a skilled hacker on the run. The game features a mix of fast-paced platforming and puzzle-solving, with an emphasis on verticality and exploration.</p>
                         <h4 class="contributions-heading">Key Contributions</h4>
@@ -164,12 +166,24 @@
             </section>
         </div>
         
+        <!--Project Modal-->
+        <div id="project-modal" class="modal">
+            <div class="modal-content">
+                <span id="close-modal" class="close">&times;</span>
+                <img id="modal-image">
+                <h3 id="modal-title"></h3>
+                <p id="modal-description"></p>
+                <h4 id="modal-contributions-heading"></h4>
+                <ul id="modal-contributions"></ul>
+            </div>
+        </div>
+        
         <!--Footer-->
         <footer>
             <div id="footer-links" class="bg-secondary">
                 <ul id="footer-buttons">
                     <li><a href="contact.html" class="footer-button">Contact</a></li>
-                    <li><a href="???" class="footer-button">Copyright</a></li>
+                    <li><a id="copyright-button" class="footer-button">Copyright</a></li>
                 </ul>
                 <a href="index.html"><img src="Assets/Images/Logos/logo.jpg" alt="Business logo for C Elliott Lawson" id="personal-logo"></a>
                 <ul id="footer-logos">
@@ -177,6 +191,14 @@
                     <li><a href="https://www.facebook.com/"><img src="Assets/Images/Logos/facebook-logo.png" class="footer-logo" alt="Facebook Logo" width="50"></a></li>
                     <li><a href="https://twitter.com/"><img src="Assets/Images/Logos/x-logo.png" class="footer-logo" alt="X Logo" width="50"></a></li>
                 </ul>
+            </div>
+            <!-- Modal for Copyright Information -->
+            <div id="copyright-modal" class="modal">
+                <div class="modal-content">
+                    <span id="close-copyright-modal" class="close">&times;</span>
+                    <p>&copy; 2024 C Elliott Lawson. All rights reserved.</p>
+                    <p>This website and its content are the property of C. Elliott Lawson. Unauthorized use or reproduction is prohibited.</p>
+                </div>
             </div>
         </footer>
     </body>
