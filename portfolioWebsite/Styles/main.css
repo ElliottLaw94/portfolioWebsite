@@ -1107,6 +1107,7 @@ footer img {
     
 }
 
+
 /*------TABLETS------*/
 @media screen and (min-width: 600px) and (max-width: 1024px) {
     * {
@@ -1228,7 +1229,7 @@ footer img {
     }
     
     #copyright-modal {
-        top: 75%;
+        top: 72%;
         left: 10%;
         max-width: 80%;
         text-align: center;
@@ -1410,5 +1411,6 @@ footer img {
     #find-my-work {
         gap: 7rem;
     }
+    
     
 }
