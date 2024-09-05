@@ -352,6 +352,7 @@ footer img {
     z-index: 10;
     max-height: max-content;
     padding: 15px;
+    text-align: center;
 }
 
 /*Project modal styles--*/
@@ -802,7 +803,7 @@ footer img {
 /*--------RESPONSIVE STYLES--------*/
 
 /*-----SMARTPHONES-----*/
-@media (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 599px) {
     /*--Nav--*/
     nav {
         height: 0.7rem;
@@ -1062,11 +1063,14 @@ footer img {
     }
     
     .reference-people {
-        gap: 10px;
+        gap: 5px;
+        width: 95%;
+        margin-left: 1%;
+        padding-right: 10px;
     }
     
     #references-list p {
-        font-size: 14px;
+        font-size: 13px;
     }
     
     /*----CONTACT & SHOP PAGE----*/
@@ -1104,9 +1108,307 @@ footer img {
 }
 
 /*------TABLETS------*/
-@media (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    * {
+        font-size: 18px;
+    }
+    /*--Nav--*/
+    nav {
+        height: 0.7rem;
+        width: 100%;
+    }
+
+    /*--Nav Logo Settings--*/
+    nav img {
+        display: none;
+    }
     
-     {
+     #nav-buttons-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        transform: translateX(-0.5%)
         
     }
+
+    .nav-button {
+        font-size: 12px;
+        border: 1px solid var(--section-secondary);
+        width: 5.5rem;
+    }
+
+    /*--Footer--*/
+    #footer-links {
+        height: 120px;
+    }
+    
+    #footer-buttons {
+        gap: 2rem;
+        right: %;
+    }
+    .footer-button {
+        font-size: 14px;
+        width: 4rem
+    }
+    
+    #personal-logo {
+        width: 125px;
+        height: 125px;
+    }
+    
+    #footer-logos {
+        transform: none;
+        gap: 3rem;
+        right: 7%;
+    }
+    
+    #footer-logos img {
+        width: 40px;
+    }
+    
+    /*--Headings--*/
+    .section-title {
+        font-size: 26px;
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+
+    .section-subheading {
+        font-size: 24px;
+    }
+
+    .project-title {
+        font-size: 18px;
+    }
+    
+    .contributions-heading {
+        font-size: 16px;
+    }
+    
+    /*--Card Settings--*/
+    .project-card {
+        width: 300px;
+    }
+    
+    .project-card img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .project-card:hover {
+        transform: none;
+    }
+    
+    .project-card img: hover {
+        transform: none;
+    }
+    
+    .project-description {
+        font-size: 15px
+    }
+    
+    /*--List Settings--*/
+    .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .project-list li {
+        font-size: 15px;
+    }
+    
+    /*----MODAL SETTINGS--*/
+    #thank-you-modal {
+        max-width: 60%;
+    }
+    
+    #project-modal .modal-content {
+        display: none;
+    }
+    
+    #copyright-modal {
+        top: 75%;
+        left: 10%;
+        max-width: 80%;
+        text-align: center;
+    }
+    
+    
+    /*----INDEX PAGE SETTINGS----*/
+    
+    /*Introduction container--*/
+    #introduction-container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-left: 0;
+        gap: 1rem;
+    }
+    
+    #introduction-container img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    #introduction-container p {
+        font-size: 18px;
+        width: 75%;
+        margin: 0;
+    }
+    
+    /*--Latest Work Section--*/
+    #latest-work-container img {
+        width: 650px;
+    }
+    
+    #latest-work-container p {
+        width: 85%
+    }
+    
+    
+    /*----PROFESSIONAL PROJECTS PAGE----*/
+    
+    /*--Recent Projects Section--*/
+    #recent-projects-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    #recent-projects-container aside p {
+        font-size: 18px;
+        width: 85%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    
+    #older-projects-container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    
+    /*----PERSONAL PROJECTS PAGE----*/
+    
+    /*--Personal Projects Section--*/
+    #about-personal-projects-container {
+        width: 85%;
+        margin: 4%;
+    }
+    
+    #about-personal-projects-container p {
+        font-size: 18px;
+    }
+    
+    #personal-projects-list {
+        gap: 3rem;
+    }
+    
+    /*--Upcoming Projects Section--*/
+    #upcoming-projects-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        padding-bottom: 3rem;
+        
+    }
+    
+    #upcoming-projects-container aside p {
+        width: 85%;
+        font-size: 17px;
+        margin: 0;
+        margin-left: 10%;
+    }
+    
+    #upcoming-projects-list {
+        gap: 3rem;
+        margin-left: 10%;
+    }
+    
+    
+    /*----SKILLS & REFERENCES PAGE----*/
+    
+    /*--About Me Section--*/
+    #about-me-container {
+        flex-direction: column;
+        height: max-content;
+        background-position: bottom;
+        align-items: center;
+        gap: 0;
+    }
+    
+    #about-me-container img {
+        width: 200px;
+        height: 200px;
+        margin-top: 10%;
+    }
+    
+    #about-me-container p {
+        width: 75%;
+        padding: 20px;
+        margin-bottom: 2rem;
+    }
+    
+    .skill-ref-container {
+        align-items: center;
+    }
+    
+    #knowledge-list {
+        margin: 10px;
+    }
+    
+    #qualification-list {
+        margin: 10px;
+    }
+    
+    /*--References Section--*/
+    
+    .reference-people img {
+        height: 100px;
+        width: 150px;
+    }
+    
+    .reference-people {
+        gap: 20px;
+        width: 95%;
+        margin-left: 1%;
+    }
+    
+    #references-list p {
+        font-size: 15px;
+    }
+    
+    /*----CONTACT & SHOP PAGE----*/
+    
+    /*--Contact page information--*/
+    #contact-page-info-container p {
+        font-size: 17px;
+        width: 100%;
+    }
+    
+    /*--Contact form--*/
+    #contact-form-container {
+        height: max-content;
+    }
+    
+    #contact-form {
+        width: 50%;
+        margin-bottom: 8%;
+    }
+    
+    /*--"Find me" lists--*/
+    
+    .find-me-list {
+        gap: 4.7rem;
+    }
+    
+    .find-me-list a {
+        font-size: 14px;
+    }
+    
+    #find-my-work {
+        gap: 7rem;
+    }
+    
 }

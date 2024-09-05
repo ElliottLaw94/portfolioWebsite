@@ -11,8 +11,9 @@ document.addEventListener("DOMContentLoaded", function() {
     
     //Close the modal
     window.addEventListener("click", function(event) {
+        //Close modal if mouse is clicked on the close button or outside the modal
         if(event.target !== modal && event.target !== copyrightButton || event.target === closeModalButton) {
-            modal.style.display = "none";
+            modal.style.display = "none"; 
         }
     });
 });

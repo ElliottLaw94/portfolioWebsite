@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var modalDescription = document.getElementById("modal-description"); 
     var modalContributionsHeading = document.getElementById("modal-contributions-heading"); 
     var modalContributions = document.getElementById("modal-contributions");
+    var closeModalButton = document.getElementById("close-modal");
 
     //For loop function that checks which project-card has been clicked
     projectLists.forEach(function(projectList) {
@@ -37,7 +38,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     //Event listener to close the modal
-    var closeModalButton = document.getElementById("close-modal");
     closeModalButton.addEventListener("click", function() {
         modal.style.display = "none";
     });
