@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         
         form.reset(); //Resets the form
-        charCounter.textContent = `0 / ${maxChars} characters`; //Resets the character counter
+        charCounter.textContent = `0 / ${maxChars}`; //Resets the character counter
         charCounter.style.color = "var(--text-colour)"; //Resets the character counter text colour on submission
     });
     

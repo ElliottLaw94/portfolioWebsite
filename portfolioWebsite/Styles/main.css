@@ -489,8 +489,8 @@ footer img {
     box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0); /*Adds shadow effect*/
   -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
      -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 30, 1.0);
-    margin-left: 20%; /*Space from the left/*
-    border-radius: 20px; /*Rounded corners*/
+    margin-left: 20%; /*Space from the left*/
+    border-radius: 20px; /*Round corners*/
     margin-top: 35%; /*Space from the top*/
     font-size: 20px;
 }
@@ -569,7 +569,7 @@ footer img {
     flex-direction: row;
     justify-content: center; /*Centers all items*/
     gap: 2rem; /*Sets gap between items*/
-    background-image: url('../Assets/Images/Logos/background-art-big-2.jpg'); /*Uses background image*/
+    background-image: url('../Assets/Images/Background/background-art-big-2.jpg'); /*Uses background image*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right; /*Aligns the image to where I want it to be*/
@@ -625,7 +625,7 @@ footer img {
 
 /*--References section--*/
 #references {
-    background-image: url('../Assets/Images/Project Art/background-art-big.jpg'); /*Sets the background image*/
+    background-image: url('../Assets/Images/Background/background-art-big.jpg'); /*Sets the background image*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom; /*Sets the background image position to where I want it to be*/
@@ -687,7 +687,7 @@ footer img {
 
 /*--Contact Form Section--*/
 #contact-form-container {
-    background-image: url('../Assets/Images/Logos/background-art-big-3.jpg'); /*Sets background image*/
+    background-image: url('../Assets/Images/Background/background-art-big-3.jpg'); /*Sets background image*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; /*Sets position of background to where I want it to be*/
@@ -799,9 +799,9 @@ footer img {
 }
 
 
-/*----Responsive Styles----*/
+/*--------RESPONSIVE STYLES--------*/
 
-/*--Smartphones--*/
+/*-----SMARTPHONES-----*/
 @media (max-width: 480px) {
     /*--Nav--*/
     nav {
@@ -810,6 +810,9 @@ footer img {
     }
 
     /*--Nav Logo Settings--*/
+    * {
+        font-size: 15px;
+    }
     nav img {
         display: none;
     }
@@ -818,7 +821,7 @@ footer img {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 0.5rem;
+        gap: 0.7rem;
         transform: translateX(-0.5%)
         
     }
@@ -826,29 +829,281 @@ footer img {
     .nav-button {
         font-size: 8px;
         border: 1px solid var(--section-secondary);
-        width: 3.7rem;
+        width: 4.5rem;
     }
 
-
+    /*--Footer--*/
+    #footer-links {
+        height: 120px;
+    }
+    
+    #footer-buttons {
+        gap: 0.5rem;
+        right: 70%;
+        flex-direction: column;
+    }
+    .footer-button {
+        font-size: 14px;
+        width: 4rem
+    }
+    
+    #personal-logo {
+        display: none;
+    }
+    
+    #footer-logos {
+        transform: none;
+        gap: 3rem;
+        right: 7%;
+    }
+    
+    #footer-logos img {
+        width: 40px;
+    }
+    
     /*--Headings--*/
     .section-title {
-        font-size: 18px;
+        font-size: 22px;
         margin-top: 30px;
         margin-bottom: 25px;
     }
 
     .section-subheading {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .project-title {
         font-size: 14px;
     }
-
-
+    
+    .contributions-heading {
+        font-size: 13px;
+    }
+    
+    /*--Card Settings--*/
+    .project-card {
+        width: 250px;
+    }
+    
+    .project-card img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .project-card:hover {
+        transform: none;
+    }
+    
+    .project-card img: hover {
+        transform: none;
+    }
+    
+    .project-description {
+        font-size: 12px
+    }
+    
+    /*--List Settings--*/
+    .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .project-list li {
+        font-size: 12px;
+    }
+    
+    /*----MODAL SETTINGS--*/
+    #thank-you-modal {
+        max-width: 60%;
+    }
+    
+    #project-modal .modal-content {
+        display: none;
+    }
+    
+    #copyright-modal {
+        top: 60%;
+        left: 5%;
+        max-width: 80%;
+    }
+    
+    
+    /*----INDEX PAGE SETTINGS----*/
+    
+    /*Introduction container--*/
+    #introduction-container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-left: 0;
+    }
+    
+    #introduction-container img {
+        width: 200px;
+        height: 200px
+    }
+    
+    #introduction-container p {
+        font-size: 17px;
+        width: 75%;
+        margin: 0;
+    }
+    
+    /*--Latest Work Section--*/
+    #latest-work-container img {
+        width: 400px;
+    }
+    
+    #latest-work-container p {
+        width: 85%
+    }
+    
+    
+    /*----PROFESSIONAL PROJECTS PAGE----*/
+    
+    /*--Recent Projects Section--*/
+    #recent-projects-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    #recent-projects-container aside p {
+        font-size: 17px;
+        width: 85%;
+        margin-left: 2%;
+        margin-top: 5%;
+    }
+    
+    #older-projects-container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    
+    /*----PERSONAL PROJECTS PAGE----*/
+    
+    /*--Personal Projects Section--*/
+    #about-personal-projects-container {
+        width: 85%;
+        margin: 4%;
+    }
+    
+    #about-personal-projects-container p {
+        font-size: 17px;
+    }
+    
+    #personal-projects-list {
+        gap: 3rem;
+    }
+    
+    /*--Upcoming Projects Section--*/
+    #upcoming-projects-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        padding-bottom: 3rem;
+        
+    }
+    
+    #upcoming-projects-container aside p {
+        width: 85%;
+        font-size: 17px;
+        margin: 0;
+        margin-left: 10%;
+    }
+    
+    #upcoming-projects-list {
+        gap: 3rem;
+        margin-left: 10%;
+    }
+    
+    
+    /*----SKILLS & REFERENCES PAGE----*/
+    
+    /*--About Me Section--*/
+    #about-me-container {
+        flex-direction: column;
+        height: max-content;
+        background-position: bottom;
+        align-items: center;
+        gap: 0.7rem;
+    }
+    
+    #about-me-container img {
+        width: 200px;
+        height: 200px;
+        margin-top: 10%;
+    }
+    
+    #about-me-container p {
+        width: 75%;
+        padding: 20px;
+        margin-bottom: 2rem;
+    }
+    
+    .skill-ref-container {
+        align-items: center;
+    }
+    
+    #knowledge-list {
+        margin: 10px;
+    }
+    
+    #qualification-list {
+        margin: 10px;
+    }
+    
+    /*--References Section--*/
+    
+    .reference-people img {
+        height: 100px;
+        width: 150px;
+    }
+    
+    .reference-people {
+        gap: 10px;
+    }
+    
+    #references-list p {
+        font-size: 14px;
+    }
+    
+    /*----CONTACT & SHOP PAGE----*/
+    
+    /*--Contact page information--*/
+    #contact-page-info-container p {
+        font-size: 17px;
+        width: 100%;
+    }
+    
+    /*--Contact form--*/
+    #contact-form-container {
+        height: max-content;
+    }
+    
+    #contact-form {
+        width: 75%;
+        margin-bottom: 8%;
+    }
+    
+    /*--"Find me" lists--*/
+    
+    .find-me-list {
+        gap: 1.5rem;
+    }
+    
+    .find-me-list a {
+        font-size: 12px;
+    }
+    
+    #find-my-work {
+        gap: 4rem;
+    }
+    
 }
 
-/*--Tablets--*/
+/*------TABLETS------*/
 @media (min-width: 481px) and (max-width: 768px) {
     
      {
