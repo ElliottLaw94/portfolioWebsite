@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var userName = document.getElementById("name").value;
         var userMessage = messageInput.value;
         
-        //Enables the use of return key to generate <br> in HTML
+        //Enables the use of return key and generates <br> in HTML instead of \n
         var formattedMessage = userMessage.replace(/\n/g, "<br>");
         
         //Sets custom message in HTML
