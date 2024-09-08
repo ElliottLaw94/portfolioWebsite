@@ -32,8 +32,10 @@ document.addEventListener("DOMContentLoaded", function() {
         var userName = document.getElementById("name").value;
         var userMessage = messageInput.value;
         
-        //Enables the use of return key and generates <br> in HTML instead of \n
-        var formattedMessage = userMessage.replace(/\n/g, "<br>");
+        // Enables line breaks in thank-you-modal message
+        // [1] Programiz, 'JavaScript Program to Replace All Line Breaks with <br>' (2024). [replace.(/(\r\n|\r|\n)/g), "<br>"]. 
+        // Available: https://www.programiz.com/javascript/examples/replace-line-breaks
+        var formattedMessage = userMessage.replace(/(\r\n|\r|\n)/g, "<br>");
         
         //Sets custom message in HTML
         modalMessage.innerHTML = `
@@ -47,13 +49,15 @@ document.addEventListener("DOMContentLoaded", function() {
         modal.style.display = "block";
 
         
-        form.reset(); //Resets the form
-        charCounter.textContent = `0 / ${maxChars}`; //Resets the character counter
+        form.reset(); //Resets the form on submission
+        charCounter.textContent = `0 / ${maxChars}`; //Resets the character counter on submission
         charCounter.style.color = "var(--text-colour)"; //Resets the character counter text colour on submission
     });
     
-    //Closes the modal when the user clicks the close button
-    closeModalButton.addEventListener("click", function() {
-        modal.style.display = "none";
-    });
+    //Close the modal
+    window.addEventListener("click", function(event) {
+        //Close modal if mouse is clicked on the close button or outside the modal
+        if(event.target !== modal || event.target === closeModalButton) {
+            modal.style.display = "none"; 
+        }});
 });

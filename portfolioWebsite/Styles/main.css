@@ -323,9 +323,11 @@ footer img {
 /*--Modal content box--*/
 .modal-content {
     overflow: hidden;
+    flex-direction: row;
     border-radius: 20px;
     padding: 10px;
     word-wrap: break-word; /*Keeps text from spilling over the width*/
+    flex-direction: row;
 }
 
 /*--Modal close button styles--*/
@@ -357,8 +359,11 @@ footer img {
 
 /*Project modal styles--*/
 #project-modal {
-    left: 35%;
-    top: 11%;
+    flex-direction: row;
+    max-width: 90%;
+    height: 100%;
+    left: 5%;
+    top: 0;
     text-align: center; /*Center project description text*/
 }
 
@@ -374,15 +379,15 @@ footer img {
 }
 
 #project-modal h3 {
-    font-size: 22px; /*Makes project font size bigger for modals*/
+    font-size: 24px; /*Makes project font size bigger for modals*/
 }
 
 #project-modal h4 {
-    font-size: 20px; /*Makes project font size bigger for modals*/
+    font-size: 22px; /*Makes project font size bigger for modals*/
 }
 
 #project-modal img {
-    width: 370px; /*Sets the width of the project images to be bigger in a modal*/
+    width: 400px; /*Sets the width of the project images to be bigger in a modal*/
 }
 
 
@@ -701,7 +706,7 @@ footer img {
 #contact-form {
     display: flex;
     flex-direction: column;
-    width: 17%; /*Sets width of the form to be 17% of the container*/
+    width: 20%; /*Sets width of the form to be 17% of the container*/
     background-color: var(--section-primary);
     height: max-content;
     padding: 20px;
@@ -806,7 +811,7 @@ footer img {
 @media screen and (min-width: 320px) and (max-width: 599px) {
     /*--Nav--*/
     nav {
-        height: 0.7rem;
+        height: 0.7rem; /*Adjusts height of nav to make smaller*/
         width: 100%;
     }
 
@@ -815,7 +820,7 @@ footer img {
         font-size: 15px;
     }
     nav img {
-        display: none;
+        display: none; /*Hides nav logo to make room for buttons*/
     }
     
      #nav-buttons-list {
@@ -849,7 +854,7 @@ footer img {
     }
     
     #personal-logo {
-        display: none;
+        display: none; /*Hides footer logo to make room for buttons*/
     }
     
     #footer-logos {
@@ -885,18 +890,18 @@ footer img {
     .project-card {
         width: 250px;
     }
-    
+    /*Adjusts image to match card*/
     .project-card img {
         width: 250px;
         height: 250px;
     }
     
     .project-card:hover {
-        transform: none;
+        transform: none; /*Removes hover animations*/
     }
     
-    .project-card img: hover {
-        transform: none;
+    .project-card img:hover {
+        transform: none; /*Removes hover animations*/
     }
     
     .project-description {
@@ -905,8 +910,8 @@ footer img {
     
     /*--List Settings--*/
     .project-list {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /*Changes display from row to columns, better suited for smaller devices*/
+        align-items: center; /*Keeps items in the center*/
     }
     
     .project-list li {
@@ -919,7 +924,7 @@ footer img {
     }
     
     #project-modal .modal-content {
-        display: none;
+        display: none; /*Prevents project-modal display entirely - removes this functionality*/
     }
     
     #copyright-modal {
@@ -933,9 +938,9 @@ footer img {
     
     /*Introduction container--*/
     #introduction-container {
-        flex-direction: column;
+        flex-direction: column; /*Changes display from row to columns, better suited for smaller devices*/
         width: 100%;
-        align-items: center;
+        align-items: center; /*Keeps items in the center*/
         margin-left: 0;
     }
     
@@ -964,8 +969,8 @@ footer img {
     
     /*--Recent Projects Section--*/
     #recent-projects-container {
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: column; /*Changes display from row to columns, better suited for smaller devices*/
+        justify-content: center; /*Keeps items in the center*/
         gap: 2rem;
     }
     
@@ -1000,8 +1005,8 @@ footer img {
     
     /*--Upcoming Projects Section--*/
     #upcoming-projects-container {
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: column; /*Changes display from row to columns, better suited for smaller devices*/
+        justify-content: center; /*Keeps itmes in the center*/
         gap: 2rem;
         padding-bottom: 3rem;
         
@@ -1024,10 +1029,10 @@ footer img {
     
     /*--About Me Section--*/
     #about-me-container {
-        flex-direction: column;
+        flex-direction: column; /*Changes display from row to column*/
         height: max-content;
-        background-position: bottom;
-        align-items: center;
+        background-position: bottom; /*Repositions background image*/
+        align-items: center; 
         gap: 0.7rem;
     }
     
@@ -1121,7 +1126,7 @@ footer img {
 
     /*--Nav Logo Settings--*/
     nav img {
-        display: none;
+        display: none; /*Removes to nav logo to make room for the buttons*/
     }
     
      #nav-buttons-list {
@@ -1129,7 +1134,7 @@ footer img {
         flex-direction: row;
         justify-content: center;
         gap: 2rem;
-        transform: translateX(-0.5%)
+        transform: translateX(-0.5%);
         
     }
 
@@ -1146,11 +1151,10 @@ footer img {
     
     #footer-buttons {
         gap: 2rem;
-        right: %;
     }
     .footer-button {
         font-size: 14px;
-        width: 4rem
+        width: 4rem;
     }
     
     #personal-logo {
@@ -1198,11 +1202,11 @@ footer img {
     }
     
     .project-card:hover {
-        transform: none;
+        transform: none; /*Removes hover animations*/
     }
     
-    .project-card img: hover {
-        transform: none;
+    .project-card img:hover {
+        transform: none; /*Removes hover animations*/
     }
     
     .project-description {
@@ -1211,8 +1215,8 @@ footer img {
     
     /*--List Settings--*/
     .project-list {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /*Changes display from row to columns, better suited for smaller devices*/
+        align-items: center; /*Keeps items in the center*/
     }
     
     .project-list li {
@@ -1220,14 +1224,17 @@ footer img {
     }
     
     /*----MODAL SETTINGS--*/
+    /*Adjustments to thank-you-modal*/
     #thank-you-modal {
         max-width: 60%;
     }
     
+    /*Adjustments to project-modal*/
     #project-modal .modal-content {
-        display: none;
+        display: none; /*Removes the modal display*/
     }
     
+    /*Adjustments to copyright-modal*/
     #copyright-modal {
         top: 72%;
         left: 10%;
@@ -1240,7 +1247,7 @@ footer img {
     
     /*Introduction container--*/
     #introduction-container {
-        flex-direction: column;
+        flex-direction: column; /*Changes display from row to columns, better suited for smaller devices*/
         width: 100%;
         align-items: center;
         margin-left: 0;
@@ -1272,8 +1279,8 @@ footer img {
     
     /*--Recent Projects Section--*/
     #recent-projects-container {
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: column; /*Changes display from row to columns, better suited for smaller devices*/
+        justify-content: center; /*Keeps items in the center of the screen*/
         gap: 2rem;
     }
     
@@ -1308,8 +1315,8 @@ footer img {
     
     /*--Upcoming Projects Section--*/
     #upcoming-projects-container {
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: column; /*Changes display from row to columns, better suited for smaller devices*/
+        justify-content: center; /*Holds items in the center if the screen*/
         gap: 2rem;
         padding-bottom: 3rem;
         
@@ -1323,7 +1330,7 @@ footer img {
     }
     
     #upcoming-projects-list {
-        gap: 3rem;
+        gap: 3rem; /*Decrease gap between items*/
         margin-left: 10%;
     }
     
@@ -1336,7 +1343,7 @@ footer img {
         height: max-content;
         background-position: bottom;
         align-items: center;
-        gap: 0;
+        gap: 0; /*Removes the gap in about-me-container*/
     }
     
     #about-me-container img {
@@ -1352,7 +1359,7 @@ footer img {
     }
     
     .skill-ref-container {
-        align-items: center;
+        align-items: center; /*Sets all items of this class to the center*/
     }
     
     #knowledge-list {
@@ -1366,50 +1373,51 @@ footer img {
     /*--References Section--*/
     
     .reference-people img {
+        /*Adjusts size of images*/
         height: 100px;
         width: 150px;
     }
     
     .reference-people {
-        gap: 20px;
+        gap: 20px; /*Adjusts gap between image and text*/
         width: 95%;
         margin-left: 1%;
     }
     
     #references-list p {
-        font-size: 15px;
+        font-size: 15px; /*Ensure text can still fit in the references list*/
     }
     
     /*----CONTACT & SHOP PAGE----*/
     
     /*--Contact page information--*/
     #contact-page-info-container p {
-        font-size: 17px;
-        width: 100%;
+        font-size: 17px; /*Adjusts font size*/
+        width: 100%; /*Adjust width of the p text*/
     }
     
     /*--Contact form--*/
     #contact-form-container {
-        height: max-content;
+        height: max-content; /*Keeps height of the form adjustable depending on the content
     }
     
     #contact-form {
-        width: 50%;
-        margin-bottom: 8%;
+        width: 50%; /*Change width to fit a smaller screen*/
+        margin-bottom: 8%; /*Add a margin to the bottom*/
     }
     
     /*--"Find me" lists--*/
     
     .find-me-list {
-        gap: 4.7rem;
+        gap: 4.7rem; /*Adjusts the gap between list items*/
     }
     
     .find-me-list a {
-        font-size: 14px;
+        font-size: 14px; /*Adjusts font size of the link text*/
     }
     
     #find-my-work {
-        gap: 7rem;
+        gap: 7rem; /*Adjusts gap*/
     }
     
     

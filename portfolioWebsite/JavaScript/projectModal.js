@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 modalContributions.innerHTML = contributions.map(contribution => `<li>${contribution}</li>`).join("");
 
                 //Show the modal
-                modal.style.display = "block";
+                modal.style.display = "table-row";
             }
         })
     });
