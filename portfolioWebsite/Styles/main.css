@@ -304,6 +304,8 @@ footer img {
 
 /*----MODAL SETTINGS----*/
 
+/*-[7] W3Schools, 'How To Create a Modal Box', 2024. [Online]. Available: https://www.w3schools.com/howto/howto_css_modals.asp. [Accessed: 15-Aug-2024]. Accessed for research on how to build a modal box with HTML, JavaScript and CSS-*/
+
 /*--Default modal class settings--*/
 .modal {
     display: none; /*Hidden by default*/
@@ -806,19 +808,22 @@ footer img {
 
 
 /*--------RESPONSIVE STYLES--------*/
+/*--[12] W3Schools, 'Responsive Web Design Media Queries' 2024. [Online]. Avaialable: https://www.w3schools.com/css/css_rwd_mediaqueries.asp. [Accessed: 23-Aug-2024]. Accessed for information on responsive web design.--*/
 
 /*-----SMARTPHONES-----*/
 @media screen and (min-width: 320px) and (max-width: 599px) {
-    /*--Nav--*/
+   
+    * {
+        font-size: 15px; /*Global font size adjustment*/
+    }
+    
+    /*----NAV----*/
     nav {
         height: 0.7rem; /*Adjusts height of nav to make smaller*/
         width: 100%;
     }
 
     /*--Nav Logo Settings--*/
-    * {
-        font-size: 15px;
-    }
     nav img {
         display: none; /*Hides nav logo to make room for buttons*/
     }
@@ -1078,6 +1083,7 @@ footer img {
         font-size: 13px;
     }
     
+    
     /*----CONTACT & SHOP PAGE----*/
     
     /*--Contact page information--*/
@@ -1118,7 +1124,9 @@ footer img {
     * {
         font-size: 18px;
     }
-    /*--Nav--*/
+    
+    
+    /*----NAV----*/
     nav {
         height: 0.7rem;
         width: 100%;
@@ -1222,6 +1230,7 @@ footer img {
     .project-list li {
         font-size: 15px;
     }
+    
     
     /*----MODAL SETTINGS--*/
     /*Adjustments to thank-you-modal*/
@@ -1388,6 +1397,7 @@ footer img {
         font-size: 15px; /*Ensure text can still fit in the references list*/
     }
     
+    
     /*----CONTACT & SHOP PAGE----*/
     
     /*--Contact page information--*/
@@ -1418,7 +1428,5 @@ footer img {
     
     #find-my-work {
         gap: 7rem; /*Adjusts gap*/
-    }
-    
-    
+    }   
 }
